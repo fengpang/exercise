@@ -1,0 +1,26 @@
+body{
+	font: small;
+	background-color: #68cdd5;
+	color: #ffffff;
+	text-align: center;
+}
+.BJPTTeng {
+	float: right;
+	margin-top: 100px;
+	margin-right: 20%;
+}
+.two {
+	float: left;
+	margin-top: 100px;
+	margin-left: 20%;
+}
+.main {
+	margin-top: 100px;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: left;
+}
+.logo {
+	margin-top: 100px;
+}
