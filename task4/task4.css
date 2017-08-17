@@ -1,0 +1,95 @@
+body {
+	font-family:sans-serif;
+	background-color: #eff0f4;
+	margin: 0px;
+    font-size: 4.3vw;
+    line-height: 4vh;
+}
+header {
+	background-color: #2fc0cd;
+	color: #ffffff;
+	height: 8vh;
+	width: 100%;
+}
+.register {
+	position: fixed;
+	left: 1%;
+	font-size: 2.91vh;
+	top: 2%;
+
+}
+.sign-in {
+	font-size: 3vh;
+	text-align: center;
+	padding: 1.3vh 0;
+}
+.close {
+	position: fixed;
+	right: 1%;
+	top: 2%;
+	font-size: 2.91vh;
+}
+footer {
+	position: relative;
+    font-size: 2.91vh;
+    margin-top: 2vh;
+}
+input.box {
+	border: none;
+	outline: none;
+	font-size: 1.91vh;
+	display: inline-block;
+	vertical-align: middle;
+	width: 60%;
+	border-left: solid #ddd 1px;
+	padding: 1vh 3vw;
+	margin-left: -2vw;
+
+}
+button {
+	height: 100%;
+	background-color: #2fc0cd;
+	color: #ffffff;
+	width: 100%;
+	letter-spacing: 1em;
+	font-size: 3vh;
+	outline: none;
+	border: none;
+}
+button:hover {
+	background: #2fc0cd;
+	border-style: solid;
+	border-color: #d3f8fb;
+	border-width: 1px;
+	cursor:pointer;
+
+}
+div.submit {
+	height: 7vh;
+	clear: right;
+}
+.main-box {
+    background-color: #fff;
+    margin: 3vh 0;
+    padding: 1vh 0;
+}
+.image-box {
+    display: inline-block;
+    margin: 0 3%;
+}
+img {
+	max-width: 70%;
+	vertical-align: middle;
+}
+.footer-word {
+	position: absolute;
+    color: #9ed5de;
+	border-bottom: solid;
+	right: 0;
+}
+.register:hover {
+	cursor: pointer;
+}
+.close:hover {
+	cursor: pointer;
+}
