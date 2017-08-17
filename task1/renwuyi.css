@@ -1,0 +1,19 @@
+
+p{
+	padding:     10vw;
+	margin:      0.5vw 0.25vw 0.5vw 0.25vw;
+	background-color:   #ff9800;
+	border-radius: 10px;
+}
+#one {
+	float: left;
+}
+#two {
+	float: left;
+}
+#three {
+	float:  left;
+}
+body {
+	margin-left: 19vw;
+}
