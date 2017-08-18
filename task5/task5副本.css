@@ -1,0 +1,152 @@
+html {
+	font-size: 312.5%;
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+header {
+	background-color: #5fc0cd;
+	background-size: 100%;
+	color: #ffffff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 1rem;
+}
+footer {
+	display: flex;
+	font-size: .34rem;
+    position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+}
+h1 {
+	font-size: .36rem;
+	position: fixed;
+	left: 42%;
+}
+.name {
+	font-size: .36rem;
+}
+.age {
+	font-size: .28rem;
+	margin-left: .3rem;
+}
+.age-name {
+	display: flex;
+	align-items: center;
+}
+.position {
+	font-size: .24rem;
+	padding-left: .4rem;
+}
+.back {
+	position: fixed;
+	width: .3rem;
+	margin: .2rem 0 0 .2rem;
+
+}
+ul {
+	background: url(images/task5-1_10.png) no-repeat .3rem .35rem;
+	list-style-type: none;
+	font-size: .32rem;
+	margin: 0;
+	padding: 0;
+	background-size: .05rem;
+
+}
+.head {
+	background: url(images/背景.png) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	height: 3.3rem;
+}
+.names {
+	background: url(images/task5map_03.png) no-repeat .06rem .85rem;
+	line-height: 0.05rem;
+	margin: 1.15rem .3rem 1.25rem .5rem;
+	color: white;
+	background-size: 0.26rem;
+}
+.header {
+	margin: .8rem .3rem .8rem .3rem;
+	width: 1.7rem;
+}
+li.skills {
+	border-bottom: solid 1px #e1e5e7; 
+	padding: .35rem .6rem; 
+}
+.main-list {
+    display: flex;
+    border-bottom: solid 1px #e1e5e7;
+    margin:  0 0.35rem;
+    padding: 0.35rem;
+    align-items: center;
+}
+.main-live-food {
+    display: flex;
+    padding-left: .72rem;
+    background: url(images/task5-1_11.png) no-repeat .2rem .38rem,
+                url(images/task5-1_11.png) no-repeat 1.7rem .39rem;
+    background-size: .4rem;
+}
+.food {
+	margin-left: .8rem;
+}
+.bord {
+	color: #999999;
+	border-right: solid 1px #e1e5e7;
+	padding: 0 .27rem 0 0;
+}
+.specific {
+	margin-left: .27rem;
+}
+.long-txt {
+	width: 70%;
+}
+button.messge {
+	padding: .23rem;
+	margin: 0 3.3vw .4rem 3.3vw;
+	font-size: .34rem;
+	border: solid 1px #5fc0cd;
+	background-color: #fff;
+	border-radius: .1rem;
+	color: #5fc0cd;
+	width: 43.05%; 
+	outline: none;
+	transition: background 1s,
+	            color 1s;
+}
+button.contact {
+	padding: .23rem;
+	margin: 0 3.33vw .4rem 0;
+	font-size: .34rem;
+	background-color: #5fc0cd;
+	border: solid 1px #5fc0cd;
+	color: #fff;
+	border-radius: .1rem;
+	width: 43.05%;
+	outline: none;
+	
+    transition: background 0.5s,
+                color 0.5s;
+}
+.messge:hover {
+	cursor: pointer;
+	background-color: #e3f2f9;
+}
+.contact:hover {
+	cursor: pointer;
+	background-color: #e3f2e9;
+	color: #5fc0cd;
+	border-color: #5fc0cd;
+}
+.white-box {
+    background-color: #fff;
+	height: 3.6rem;
+	width: 100%;
+}
