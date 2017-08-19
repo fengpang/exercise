@@ -1,0 +1,256 @@
+header {
+	position: fixed;
+	top: 0;
+	background-color: #5fc0cd;
+	width: 100%;
+	height: 6rem;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	background-color: #f8fafb;
+	width: 100%;
+}
+body {
+	margin-top: 0;
+}
+.icon {
+	display: block;
+    background: url(task5-icon.png) no-repeat;
+}
+.table-mine {
+	margin-top: 10rem;
+	background-color: #fff;
+}
+.position-button {
+	position: fixed;
+	border: 0;
+	float: right;
+	margin-top: -4.5rem;
+	background-color: #5fc0cd;
+	right: 0;
+}
+.header-button-center {
+	margin: 1rem auto;
+	width: 50%;
+}
+.footer-button {
+	border: none;
+	padding: 0;
+}
+.footer-main-button {
+    padding:0;
+    border:0;
+    height: 100%;
+    width: 30%;
+    background-color: #f8fafb;
+}
+.header-select {
+	position: fixed;
+	top: 5.5rem;
+	width: 100%;
+	border: none;
+	padding-top: 1rem;
+	background-color: #fff;
+}
+.header-select-1 {
+	display: inline-block;
+	border: none;
+	border-radius: 0;
+	border-right: solid 1px #ccc;
+	padding-left: 7%;
+	margin-right: -0.3rem;
+}
+.form-control {
+	width: 32%;
+}
+.border-select {
+	border-bottom: solid 1px #ccc;
+	padding: 0.5rem 0;
+}
+.form-control {
+	-webkit-box-shadow:none;
+	box-shadow: none; 
+}
+button {
+	outline: none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: none;
+}
+.the-third-one {
+	border:none;
+}
+.price {
+	color: red;
+}
+.footer-button-left {
+	width: 100%;
+	background-color: #f8fafb;
+}
+.footer-button-right {
+	width: 100%;
+	background-color: #f8fafb;
+	vertical-align: 109%;
+}
+span {
+
+}
+.header-button-left {
+	background-color: #55a8b3;
+	color: #fff;
+	margin-top: -0.3rem;
+	width: 50%;
+}
+.header-button-right {
+	margin-left: -0.5rem;
+	margin-top: -0.3rem;
+	width: 50%;
+}
+img {
+	max-width: 100%;
+}
+.btn-primary.active{
+	background-color: #55a8b3;
+	color: #fff;
+	border: none;
+}
+.btn-default.active{
+    color: #87d0da;
+	background-color: #fff;
+	border: none;
+}
+.btn-lg {
+    padding: 1rem 1rem;
+    font-size: 1.9rem;
+    line-height: 1.3333333;
+    border-radius: 0.7rem;
+}
+.position-icon {
+	max-width: 70%;
+}
+.table>tbody>tr>td {
+	vertical-align: middle;
+}
+.right-button-footer {
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+}
+.left-button-footer {
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	margin-left: 3%;
+}
+.footer-left-word {
+	text-align: center;
+	color: #5fc0cd;
+
+}
+.footer-right-word {
+	color: #6b6b6b;
+}
+.time {
+	margin-left: 28px;
+}
+.date-word {
+	display: inline-block;
+}
+.price {
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #41ada9;
+    background-color: #fffbfb;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary{
+	background-color: #55a8b3; 
+    color: #fff;
+    border: none;
+}
+.btn-primary:hover {
+	background-color: #55a8b3; 
+    color: #fff;
+    border: none;
+}
+.oppsition {
+	width: 1rem;
+	margin-left: 2rem;
+}
+.table>tbody>tr>td {
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+}
+.time {
+	    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 10rem;
+}
+li {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-top:solid 1px #ddd;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: url(images/task5-2_07.png) no-repeat 0.5em 0.5em,
+                url(images/task5-2_13.png) no-repeat 0.5em 4.3em;
+    background-size: 1.5rem;
+}
+.data {
+	display: flex;
+	align-items: center;
+	margin: 0.5em 0;
+	padding-left: 1em;
+}
+.date-word {
+	margin:0 1em;
+}
+.times {
+	display: flex;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.dates {
+	margin:0 0 0 2em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 60%;
+}
+.price {
+	width: 40%;
+	text-align: right;
+	padding-right: 3rem;
+	margin-right: 1em;
+	background: url(images/fanhui.png) no-repeat 100% 0;
+	background-size: 1rem;
+}
+.position {
+	display: flex;
+	margin: 0.5em 0;
+	padding-left: 1em;
+}
+.size {
+	width: 1.4rem;
+	margin-left: 1rem;
+}
+ p {
+ 	margin: 0;
+ }
+.header-button-left:hover {
+    background: #fff;
+}
