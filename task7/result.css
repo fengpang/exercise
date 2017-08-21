@@ -1,0 +1,141 @@
+html {
+	font-size: 625%;
+}
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+
+header {
+	position: fixed;
+	top: 0;
+	max-width: 720px;
+	width: 100%;
+	background-color: #29bde0;
+	height: .6rem;
+	border-bottom: solid 1px #fff;
+}
+h1 {
+	font-size: .202rem;
+	color: #fff;
+	margin: 0 .2rem;
+	text-align: center;
+	font-weight: normal;
+	margin-top: .2rem;
+}
+.home {
+    position: absolute;
+    top: .1rem;
+    width: .4rem;
+    left: .18rem;
+}
+.information {
+	position: absolute;
+	right: -95vw;
+	top: -.383rem;
+	width: .35rem;
+}
+
+
+
+main {
+	max-width: 720px;
+	width: 100%;
+	background: #29bde0;
+	margin-top: .6rem;
+	margin-bottom: .5rem;
+}
+/*--游戏胜利蓝色界面部分--*/
+.winner-icon {
+	max-width: 100%;
+	height: 20vh;
+}
+.winner-box {
+    padding-top: .2rem;
+    text-align: center;
+}
+.amazing {
+    font-size: .208rem;
+    color: #ffc865;
+    margin:0 11.7% .3rem 11.7%;
+}
+.game-data {
+	color: #fff;
+	font-size: .17rem;
+	margin: 0 11.7%;
+	white-space: pre;
+	line-height: .1rem;
+}
+/*--游戏过程--*/
+.game-course {
+	background: #fff;
+	color: #a6a6a6;
+	margin-top: .14rem;
+	text-align: left;
+	font-size: .17rem;
+}
+.course-days {
+	border-bottom: solid 1px #a6a6a6;
+	padding: .1rem 11.7% .3rem 11.7%;
+	background-color: #fff;
+}
+h2 {
+	color: #515151;
+	font-size: .19rem;
+	display:  inline-block;
+	margin:0 42.81% 0 0;
+	font-weight: normal;
+}
+.times {
+	font-size: .16rem;
+	display: inline-block;
+}
+p {
+	margin: 0;
+}
+
+
+footer {
+	height: 11.36vh;
+	width: 100%;
+	max-width: 720px;
+	background-color: rgba(153,223,240,0.7);
+	position: fixed;
+	bottom: 0;
+	line-height: 0;
+}
+.play-again {
+	background: #f66f6f;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	height: 7.49vh;
+	font-size: .208rem;
+	width: 42.5vw;
+	max-width: 306px;
+	margin-left: 4.25%;
+	margin-top: 1.9vh;
+}
+a {
+	position: relative;
+	text-decoration: none;
+}
+
+.up-share {
+	background-color: #fbb435;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	height: 7.49vh;
+	font-size: .208rem;
+	width: 42.5vw;
+	max-width: 306px;
+	margin-left: -2%;
+	margin-top: 1.9vh;
+}
+a:visited {
+	color: #fff;
+}

@@ -1,0 +1,151 @@
+html {
+	font-size: 625%;
+}
+body {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 720px;
+    background-color: #29bde0;
+    z-index: 1;
+}
+h1 {
+	font-size: .272rem;
+	margin: .2rem .2rem;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+    position: relative;
+}
+main {
+	margin-top: .62rem;
+	background: #29bde0;
+}
+.main-first-words {
+	position: relative;
+	font-size: .208rem;
+	background: #b9e9f5;
+	padding: .30rem .275rem .30rem .48rem;
+}
+.play {
+	position: absolute;
+	right: .17rem;
+	top: .15rem;
+}
+.glyphicon-play-circle {
+	font-size: .208rem;
+	color: #fbb435;
+
+}
+.main-first-cilik {
+	font-size: .192rem;
+	color: #fff;
+	margin-left: .7rem;
+}
+.opptions {
+	position: absolute;
+	top: -.1rem;
+	left: .04rem;
+
+}
+.close-mine {
+	position: absolute;
+	top: -.1rem;
+	right: .04rem;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: #b9e9f5 transparent transparent transparent;
+    margin-left: .7rem;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	background: #29bde0;
+	height: 1.52rem;
+	width: 100%;
+	max-width: 720px;
+}
+button {
+	background: #fbb435;
+	color: #fff;
+	height: .9rem;
+	margin: .43rem 11.7% .62rem 11.7%;
+	width: 76.56%;
+	border: none;
+	outline: none;
+	font-size: .32rem;
+}
+.container-fluid{
+	margin-top: .3rem;
+}
+.col-xs-1 {
+	background: #f5c97b;
+	border: solid #fff 5px;
+	width: 21.25%;
+	height: 21.25vw;
+	margin: 0 5.7%;
+	position: relative;
+	max-width: 153px;
+	max-height: 153px;
+	font-size: .19rem;
+	white-space: nowrap;
+}
+.player-number {
+	background: #83b09a;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 19.85%;
+	font-size: 18.208%;
+}
+.status {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.four-icon {
+	display: none;
+	position: absolute;
+	background: url(images/刀.png) no-repeat 0,
+	            url(images/放大镜.png) no-repeat 30.9%,
+	            url(images/轮盘_15.png) no-repeat 60.9%,
+	            url(images/十字架_17.png) no-repeat 90.9%;
+	width: 100%;
+	height: 200%;
+	background-size: 23%;
+	left: 3%;
+	top: 26%;
+}
+.col-xs-1:hover  .four-icon{
+	cursor: pointer;
+	display: block;
+}
+.row {
+	margin-bottom: 7vw;
+}
+.empty-box {
+	width: 100%;
+	height: 20vh;
+	background-color: #29bde0;
+}
+.play-box {
+    width: 15%;
+}
+h2 {
+	font-size: .208rem;
+	margin: 0;
+	width: 85%;
+}
