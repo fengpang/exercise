@@ -1,0 +1,293 @@
+html {
+	font-size: 625%;
+}
+body {
+	margin: 0;
+	background: #fafafa;
+}
+header {
+	width: 100%;
+	font-size: .14rem;
+}
+.header-top {
+
+}
+li {
+	display: inline-block;
+}
+.contact-way {
+	margin: .12rem  0 .12rem 9.7%;
+	display: inline-block;
+	color: #28b078;
+}
+.header-icons{
+    display: inline-block;
+    float: right;
+    margin: .07rem 9.7% 0.07rem 0;
+    padding-left: 0;
+}
+
+
+
+/*导航栏部分*/
+
+.mine-nav {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	padding: .4rem .33rem;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	border-bottom: solid .04rem #fff;
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:forcus {
+	border-bottom: solid .04rem #fff;
+	color: #fff;
+}
+
+
+/*mine-nave*/
+.mine-nav {
+	background-color: #28b078;
+	color: #fff;
+	width: 100%;
+}
+.nav:hover {
+	color: #fff;
+}
+.navbar-toggle {
+	float: right;
+}
+.navbar-nav {
+	text-align: center;
+}
+@media (min-width: 768px){
+.navbar-nav {
+	float: right;
+	margin-right: 2%;
+}
+}
+.navbar-nav li:hover {
+	color: #fff;
+}
+
+.jns-icon {
+	position: absolute;
+	left: 15.7%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.jns-image {
+	max-width: 100%;
+}
+@media only screen and (max-width: 750px) {
+main {
+	margin-top:.24rem;
+}
+.jns-icon {
+	left: 20.7%;
+}
+.jns-image {
+	display: none;
+}
+}
+/*nav  end*/
+
+
+
+/*main start*/
+main {
+	font-size: .16rem;
+	margin-top: 0.24rem;
+}
+
+.homepage-first-row {
+	margin-left: 9.7%;
+	display: flex;
+}
+.homepage-partner {
+	color: #29b078;
+}
+.direction {
+	border-top: solid 1px #d0d6d9;
+	border-bottom: solid 1px #edf1f2;
+	padding: .2rem 0;
+	margin-top: .32rem;
+	font-size: .14rem;
+}
+ul {
+	padding-left: 0;
+}
+.profession-title {
+	color: #999999;
+	margin-right: .25rem;
+	cursor: pointer;
+}
+.profession-classing {
+    margin-right: .3rem;
+    font-weight: bold;
+}
+.profession-classing:hover {
+	color: #fff;
+	background-color: #29b078;
+	cursor: pointer;
+}
+.profession-classing-all {
+	margin-right: .3rem;
+	color: white;
+	background-color: #29b078;
+	font-weight: bold;
+	cursor: pointer;
+}
+h1 {
+	font-size: .17rem;
+	font-weight: bold;
+	padding-top: .32rem;
+	padding-bottom: .31rem;
+	margin: 0 0 .47rem 0;
+	border-bottom: solid 1px #d0d6d9;
+
+}
+
+/*list*/
+.col-sm-4 {
+	background: #fff;
+	box-shadow: 1px 1px 1px #eeeded;
+}
+main .row {
+	border-bottom: 1px solid #edf1f2;
+	border-right: 1px solid #edf1f2;
+	font-size: .12rem;
+}
+/*avatar part*/
+.avatar {
+	float: left;
+	margin: .2rem .08rem .16rem .11rem; 
+}
+h2 {
+	font-size: .16rem;
+	font-weight: bold;
+	margin: .35rem 0 .19rem 0;
+}
+.profession-introduce {
+	overflow: hidden;
+	margin-bottom: .34rem;
+	font-size: .14rem;
+}
+
+/*firt row*/
+.list-first-row {
+	border-top: 1px solid #edf1f2;
+	clear: left;
+}
+.door,.level-diffcult,.grow-time,.needing {
+	padding: .12rem 0 .12rem .11rem;
+}
+.level-diffcult {
+	border-left: 1px solid #edf1f2;
+}
+.col-xs-6 {
+	padding: 0;
+}
+/*second*/
+.second-row {
+	display: flex;
+	align-items: center;
+}
+.door,.level-diffcult,.grow-time,.needing,.money,.skills {
+	color: #a9a9a9;
+}
+.door{
+	background: url(images/yellow-star_03.png) no-repeat .48rem .12rem;
+}
+.level-diffcult {
+	background: url(images/yellow-star_03.png) no-repeat .72rem .12rem,
+				url(images/yellow-star_03.png) no-repeat .97rem .12rem;
+}
+.times {
+	padding: .12rem .11rem;
+}
+.second-row-second-clumn {
+	border-left: 1px solid #edf1f2;
+}
+.years {
+	color: #f01400;
+}
+.numbers-company {
+	padding-left: .11rem;
+}
+
+/*--footer--*/
+footer {
+	color: #fff;
+	background: #26a26f;
+	clear: left;
+}
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.footer-box {
+	padding-top: .39rem;
+	margin-top: 0;
+}
+.footer-top {
+	display: flex;
+}
+.footer-top-box {
+	border-bottom: solid 1px #32c086;
+}
+.footer-top-left {
+}
+.left-second-row {
+	display: flex;
+	margin-top: .65rem;
+	margin-bottom: .33rem;
+	padding-top: .39rem;
+}
+.right-second-row {
+	display: flex;
+	margin-top: .44rem;
+}
+.right-third-row {
+	display: flex;
+	margin-top: .39rem;
+	margin-bottom: .33rem;
+}
+.footer-top-right {
+}
+.weichat {
+	margin-bottom: .15rem;
+}
+.best {
+	margin-left: .34rem;
+}
+.table-game {
+	margin-left: .34rem;
+}
+.weichat-box {
+	text-align: right;
+}
+@media only screen and (max-width: 750px){
+.weichat-box {
+	text-align: left;
+}
+}
+/*页尾*/
+.footer {
+	color: #fff;
+	font-size: .12rem;
+	width: 100%;
+	background: #26a26f;
+	text-align: center;
+}
+p {
+	margin: 0;
+}

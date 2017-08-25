@@ -1,0 +1,303 @@
+html {
+	font-size: 625%;
+}
+body {
+	margin: 0;
+	background: #fafafa;
+}
+header {
+	width: 100%;
+	font-size: .14rem;
+}
+.header-top {
+
+}
+li {
+	display: inline-block;
+}
+.contact-way {
+	margin: .12rem  0 .12rem 9.7%;
+	display: inline-block;
+	color: #28b078;
+}
+.header-icons{
+    display: inline-block;
+    float: right;
+    margin: .07rem 9.7% 0.07rem 0;
+    padding-left: 0;
+}
+
+
+
+
+
+/*导航栏部分*/
+
+.mine-nav {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	padding: .4rem .33rem;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	border-bottom: solid .04rem #fff;
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:forcus {
+	border-bottom: solid .04rem #fff;
+	color: #fff;
+}
+
+
+/*mine-nave*/
+.mine-nav {
+	background-color: #28b078;
+	color: #fff;
+	width: 100%;
+}
+.nav:hover {
+	color: #fff;
+}
+.navbar-toggle {
+	float: right;
+}
+.navbar-nav {
+	text-align: center;
+}
+@media (min-width: 768px){
+.navbar-nav {
+	float: right;
+	margin-right: 2%;
+}
+}
+.navbar-nav li:hover {
+	color: #fff;
+}
+/*背景部分*/
+.background {
+	width: 100%;
+}
+.bg-img {
+	width: 100%;
+	height: 2.5rem;
+}
+
+
+
+/*main*/
+main {
+	font-size: .16rem;
+	margin-top: 0.24rem;
+}
+.informations {
+	font-size: .14rem;
+	box-shadow: 1px 1px #ddd,
+	            -1px -1px #ddd;
+}
+.homepage-first-row {
+	margin-left: 9.7%;
+	font-size: .16rem;
+	display: flex;
+}
+.homepage-partner {
+	color: #29b078;
+}
+
+aside {
+	float: left;
+	margin: 0rem .26rem 6.25rem 9.7%;
+	
+	background-color: #fff;
+	width: 3.05rem;
+	box-shadow: 1px 1px 5px #e1e1e1;
+	color: #29b078;
+}
+h2 {
+	font-size: .16rem;
+	font-weight: bold;
+	text-align: center;
+	margin: .29rem .2rem .4rem .2rem;
+	padding-bottom: .25rem;
+	color: black;
+}
+.website {
+	margin-left: 1.18rem;
+}
+span.homepage-circle {
+	height: .1rem;
+	width: .1rem;
+	border: solid 2px #ff640c;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: .06rem;
+}.webs {
+	font-size: .14rem;
+	margin-bottom: .37rem;
+}
+.webs:hover {
+	color: #ff640c;
+	cursor: pointer;
+}
+.tudou-color {
+	color: #ff640c;
+}
+
+/*main text*/
+.informations {
+	margin-top: .29rem;
+	margin-right: 9.7%;
+	background-color: #fff;
+	overflow: hidden;
+	box-shadow: 1px 1px 5px #e1e1e1;
+}
+.icon-tudou {
+	margin-right: .36rem;
+}
+.main-text, .produce-text {
+	font-size: .14rem;
+	color: #999999;
+	text-indent: 28px;
+	line-height: .25rem;
+}
+.informations-head {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 4% 11.53%;
+	display: flex;
+	align-items: center;
+}
+.informations-main {
+    padding: 4% 11.53%;
+}
+.jns-icon {
+	position: absolute;
+	left: 15.7%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.jns-image {
+	max-width: 100%;
+}
+@media only screen and (max-width: 850px) {
+.bg-img{
+	    height: 1.2rem;
+}
+main {
+	margin-top: .24rem;
+}
+.website {
+	margin: 0 32%;
+}
+aside {
+	width: 80%;
+	margin-bottom: .25rem;
+	float: none;
+	padding-top: 0.1rem;
+	margin-top: 1.25em;
+	padding-bottom: .1rem;
+}
+.informations {
+	width: 80%;
+	margin: 0 10%;
+	overflow: inherit;
+	margin-top: 0.25rem;
+	margin-bottom: .25rem;
+}
+.informations-head {
+	text-align: center;
+	display: block;
+}
+.icon-tudou {
+	margin-right: 0;
+	text-align: center;
+}
+}
+@media only screen and (max-width: 750px) {
+main {
+	margin-top:.24rem;
+}
+.jns-icon {
+	left: 20.7%;
+}
+.jns-image {
+	display: none;
+}
+}
+
+
+
+/*--footer--*/
+footer {
+	color: #fff;
+	background: #26a26f;
+	clear: left;
+}
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.footer-box {
+	padding-top: .39rem;
+	margin-top: 0;
+}
+.footer-top {
+	display: flex;
+}
+.footer-top-box {
+	border-bottom: solid 1px #32c086;
+}
+.footer-top-left {
+}
+.left-second-row {
+	display: flex;
+	margin-top: .65rem;
+	margin-bottom: .33rem;
+	padding-top: .39rem;
+}
+.right-second-row {
+	display: flex;
+	margin-top: .44rem;
+}
+.right-third-row {
+	display: flex;
+	margin-top: .39rem;
+	margin-bottom: .33rem;
+}
+.footer-top-right {
+}
+.weichat {
+	margin-bottom: .15rem;
+}
+.best {
+	margin-left: .34rem;
+}
+.table-game {
+	margin-left: .34rem;
+}
+.weichat-box {
+	text-align: right;
+}
+@media only screen and (max-width: 750px){
+.weichat-box {
+	text-align: left;
+}
+}
+/*页尾*/
+.footer {
+	color: #fff;
+	font-size: .12rem;
+	width: 100%;
+	background: #26a26f;
+	text-align: center;
+}
+p {
+	margin: 0;
+}
+
+
+
