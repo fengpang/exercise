@@ -188,7 +188,9 @@ main {
 	margin-top: .24rem;
 }
 .website {
-	margin: 0 32%;
+	margin: 0 40%;
+	text-align: center;
+	white-space: nowrap;
 }
 aside {
 	width: 80%;
@@ -271,7 +273,8 @@ footer a:hover {
 .footer-top-right {
 }
 .weichat {
-	margin-bottom: .15rem;
+	margin-top: .3rem;
+	text-align: left;
 }
 .best {
 	margin-left: .34rem;
@@ -282,9 +285,18 @@ footer a:hover {
 .weichat-box {
 	text-align: right;
 }
+.weichat-title {
+	font-size: .16rem;
+	margin-bottom: .02rem;
+}
+.weichat-image {
+	border: 8px #fff solid;
+}
 @media only screen and (max-width: 750px){
 .weichat-box {
 	text-align: left;
+	margin-bottom: .25rem;
+	margin-top:0;
 }
 }
 /*页尾*/
@@ -299,5 +311,11 @@ p {
 	margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+.navbar-nav {
+	width: 100%;
+	margin-left: .2rem;
+}
+}
 
 

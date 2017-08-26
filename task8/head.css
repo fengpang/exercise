@@ -212,13 +212,10 @@ span.circle {
 }
 @media only screen and (max-width: 750px){
 .study-next {
-		position: absolute;
-	    top: 50%;
-	    transform: translate(-100%, -68%);
-	    left: 94%;
+	display: none;
 	}
 .study-box {
-		margin: -10% 5%;
+		margin: -10% 10%;
 	}
 }
 /**/
@@ -413,7 +410,7 @@ footer a:hover {
 .footer-top-right {
 }
 .weichat {
-	margin-bottom: .15rem;
+	margin-top: .3rem;
 }
 .best {
 	margin-left: .34rem;
@@ -424,9 +421,18 @@ footer a:hover {
 .weichat-box {
 	text-align: right;
 }
+.weichat-title {
+	font-size: .16rem;
+	margin-bottom: .02rem;
+}
+.weichat-image {
+	border: 8px #fff solid;
+}
 @media only screen and (max-width: 750px){
 .weichat-box {
 	text-align: left;
+	margin-top: 0;
+	margin-bottom: .25rem;
 }
 }
 /*页尾*/
@@ -439,4 +445,11 @@ footer a:hover {
 }
 p {
 	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+.navbar-nav {
+	width: 100%;
+	margin-left: .2rem;
+}
 }

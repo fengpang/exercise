@@ -122,6 +122,7 @@ main {
 ul {
 	padding-left: 0;
 }
+
 .profession-title {
 	color: #999999;
 	margin-right: .25rem;
@@ -152,31 +153,90 @@ h1 {
 	border-bottom: solid 1px #d0d6d9;
 
 }
+@media only screen and (max-width: 768px){
+.direction-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 39%;
+}
+.profession-classing-all,.profession-title {
+	margin: 0.05rem;
+}
+.profession-classing {
+	margin: 0.05rem 0;
+}
+.needing {
+	white-space: nowrap;
+}
+.numbers-company {
+	overflow: hidden;
+}
+}
 
 /*list*/
-.col-sm-4 {
+.list-box {
 	background: #fff;
 	box-shadow: 1px 1px 1px #eeeded;
+	margin: 1%;
+	width: 31.333333%；
 }
-main .row {
+.row {
 	border-bottom: 1px solid #edf1f2;
-	border-right: 1px solid #edf1f2;
 	font-size: .12rem;
 }
+@media only screen and (max-width: 768px){
+	.list-box {
+		width: 80%;
+		margin: 0rem 10% .2rem 10%;
+	}
+}
+
 /*avatar part*/
 .avatar {
-	float: left;
-	margin: .2rem .08rem .16rem .11rem; 
+	width: 32%;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    max-width: 120px;
+}
+@media only screen and (max-width:992px){
+	.avatar {
+		width: 32%;
+		position: absolute;
+		top: 40%;
+	}
+}
+@media only screen and (max-width: 768px){
+	.avatar {
+	width: 32%;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    max-width: 120px;
+}
+@media only screen and (max-width: 320px){
+	.avatar {
+		top: 40%;
+	}
+}
+}
+.avatar-text {
+	margin-left: 36%;
 }
 h2 {
 	font-size: .16rem;
 	font-weight: bold;
-	margin: .35rem 0 .19rem 0;
+	margin: .05rem 0 .19rem 0;
+	padding-top: .3rem;
 }
 .profession-introduce {
 	overflow: hidden;
 	margin-bottom: .34rem;
 	font-size: .14rem;
+}
+.prosonal {
+	position: relative;
 }
 
 /*firt row*/
@@ -197,6 +257,7 @@ h2 {
 .second-row {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 .door,.level-diffcult,.grow-time,.needing,.money,.skills {
 	color: #a9a9a9;
@@ -219,8 +280,80 @@ h2 {
 }
 .numbers-company {
 	padding-left: .11rem;
+	padding-right: .11rem;
+}
+/*fourth*/
+.age-limit {
+	padding-left: .11rem;
+	display: inline-block;
+	margin-top: .12rem;
+	margin-bottom: .12rem;
+}
+.salary {
+	float: right;
+	margin-right: .11rem;
+	margin-top: .12rem;
+	margin-bottom: .12rem;
+}
+.fourth-last-row {
+	border-bottom: none;
+}
+.times-money {
+	border-left: 1px solid #edf1f2;
+}
+.money {
+	text-align: center;
+	line-height: 1.2rem;
+}
+@media only screen and (max-width: 769px){
+	.money {
+		line-height: .4rem;
+	}
+	.money-box {
+		border-bottom: 1px solid #edf1f2;
+	}
+}
+/*fifth*/
+.number-student {
+	margin: .12rem .11rem;
+	font-weight: bold;
+}
+/*sixth*/
+.skills {
+	margin: .12rem .11rem;
 }
 
+
+/*hover box*/
+.hover-box {
+	background: rgba(61, 61, 61, 0.7);
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: .16rem;
+    font-weight: bold;
+    display: none;
+}
+h3 {
+	margin-top: 26.65%;
+	text-align: center;
+	font-size: .16rem;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.hover-text {
+	margin: 8.31% 9.66% 18.65% 9.66%;
+	line-height: .25rem;
+}
+.list-box:hover .hover-box {
+	display: block;
+	cursor: pointer;
+}
+ 
 /*--footer--*/
 footer {
 	color: #fff;
@@ -264,7 +397,8 @@ footer a:hover {
 .footer-top-right {
 }
 .weichat {
-	margin-bottom: .15rem;
+	margin-top: .3rem;
+	text-align: left;
 }
 .best {
 	margin-left: .34rem;
@@ -275,9 +409,18 @@ footer a:hover {
 .weichat-box {
 	text-align: right;
 }
+.weichat-title {
+	font-size: .16rem;
+	margin-bottom: .02rem;
+}
+.weichat-image {
+	border: 8px #fff solid;
+}
 @media only screen and (max-width: 750px){
 .weichat-box {
 	text-align: left;
+	margin-top: 0;
+	margin-bottom: .25rem;
 }
 }
 /*页尾*/
@@ -290,4 +433,24 @@ footer a:hover {
 }
 p {
 	margin: 0;
+}
+@media (min-width: 769px) {
+	.col-sm-4 {
+	  width: 31.333333%;
+	}
+}
+.biggest-row {
+	border-bottom: 0;
+}
+.last-row {
+	margin-bottom: 10%;
+}
+@media only screen and (max-width: 768px) {
+.navbar-nav {
+	width: 100%;
+	margin-left: .2rem;
+}
+}
+.webs {
+	width: 2%;
 }
