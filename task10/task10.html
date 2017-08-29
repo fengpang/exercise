@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定制箱</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="task10.css"> 
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="head">
+				<p class="contact-way">客服热线：010-594-78634</p>
+				<div class="sign-in">
+					<p class="sign">登陆</p>
+					<p class="login">注册</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		 <!--nav start-->
+		<div class="nav-box">
+			<div class="container">
+				<ul class="nav nav-pills mine-nav">
+					<li><a  class="lastone" href="#">品质保障</a></li>
+					<li><a href="#">标准箱</a></li>
+					<li><a href="#">在线定制</a></li>
+					<li><a href="#">首页</a></li>
+			    </ul>
+	    	</div>
+	    </div>
+
+		<div class="container">
+			<ul class="step-boxs">
+				<li class="step">
+					<span class="circle">1</span>
+					<div class="line-box"></div>
+					<p class="step-text">1.定制纸箱</p>
+				</li>
+				<li class="step">
+					<span class="circle">2</span>
+					<div class="line-box"></div>
+					<p class="step-text">2.选择数量</p>
+				</li>
+				<li class="step">
+					<span class="circle">3</span>
+					<div class="line-box"></div>
+					<p class="step-text">3.上传附件</p>
+				</li>
+				<li class="step">
+					<span class="circle">4</span>
+					<div class="line-box"></div>
+					<p class="step-text">4.确认下单</p>
+				</li>
+			</ul>
+		</div>
+		<!--selects-->
+		<div class="container">
+			<h1><div class="blue-line"></div>请您按照以下步骤来指定您的纸箱</h1>
+			<p class="box-type">选择箱型</p>
+			<div class="redio-type-box">	
+				<div class="redio-box">
+					<input id="item1" type="radio" name="item" value="对口箱" checked>
+        			<label for="item1"></label>
+        			<span class="redio-text">对口箱</span>
+    			</div>
+   				<div class="redio-box">
+        			<input id="item2" type="radio" name="item" value="飞机盒">
+       				<label for="item2"></label>
+        			<span class="redio-text">飞机盒</span>
+				</div>
+				<div class="redio-box">
+					<input id="item3" type="radio" name="item" value="天地盖">
+       				<label for="item3"></label>
+        			<span class="redio-text">天地盖</span>
+				</div>
+				<select name="sele">
+        				<option value="查看详情"><span class="select">查看详情</span></option>
+        				<option value="啦啦啦">啦啦啦</option>
+				</select>
+			</div>
+
+		<!--size-->
+		<p class="box-size second-text">确定尺寸</p>
+			<div class="size-box">
+				<div class="size-first-row">
+				<div class="redio-box">
+					<input id="item4" type="radio" name="size" value="对口箱" checked>
+					<label for="item4"></label>
+					<span class="redio-text">外径</span>
+				</div>
+				<p class="input-word">长 <input class="text-input" type="text" name="longth"> mm</p>
+				<p class="input-word">宽 <input class="text-input" type="text" name="longth"> mm</p>
+				<p class="input-word">高 <input class="text-input" type="text" name="longth"> mm</p>
+				</div>
+				<div class="size-second-row">
+				<div class="redio-box">
+					<input id="item5" type="radio" name="size" value="对口箱" checked>
+					<label for="item5"></label>
+					<span class="redio-text">内径</span>
+				</div>
+				<p class="input-word">长 <input class="text-input" type="text" name="longth"> mm</p>
+				<p class="input-word">宽 <input class="text-input" type="text" name="longth"> mm</p>
+				<p class="input-word">高 <input class="text-input" type="text" name="longth"> mm</p>
+				</div>
+				<select name="sele">
+		    				<option value="查看详情"><span class="select">查看详情</span></option>
+		    				<option value="啦啦啦">啦啦啦</option>
+				</select>
+			</div>
+
+		<!--style-->
+		<p class="box-size box-style third-text">选择材质</p>
+		<div class="redio-type-box">	
+				<div class="redio-box">
+					<input id="item6" type="radio" name="style" value="对口箱" checked>
+        			<label for="item6"></label>
+        			<span class="redio-text">三层A瓦优质</span>
+    			</div>
+   				<div class="redio-box">
+        			<input id="item7" type="radio" name="style" value="飞机盒">
+       				<label for="item7"></label>
+        			<span class="redio-text">三层A瓦优质</span>
+				</div>
+				<div class="redio-box">
+        			<input id="item8" type="radio" name="style" value="飞机盒">
+       				<label for="item8"></label>
+        			<span class="redio-text">三层A瓦优质</span>
+				</div>
+				<div class="redio-box">
+        			<input id="item9" type="radio" name="style" value="飞机盒">
+       				<label for="item9"></label>
+        			<span class="redio-text">三层A瓦优质</span>
+				</div>
+				<div class="redio-box">
+        			<input id="item10" type="radio" name="style" value="飞机盒">
+       				<label for="item10"></label>
+        			<span class="redio-text">三层A瓦优质</span>
+				</div>
+				<select name="sele">
+        				<option value="查看详情"><span class="select">查看详情</span></option>
+        				<option value="啦啦啦">啦啦啦</option>
+				</select>
+			</div>
+			<div class="button-box">
+				<button type="button" name="next">下一步</button>
+		</div>
+		<!--container end-->
+	</main>
+
+
+	<footer>
+		<div class="container">
+			<div class="row footer-row">
+				<div class="col-sm-4 footer-little-box">
+					<p class="first-cloumn">51包装网——纸箱包装首选平台</p>
+				</div>
+				<div class="col-sm-4 footer-little-box">
+					<div class="first-row">
+						<p class="first-row-text">关于我们</p>
+						<p class="first-row-text">配送流程</p>
+						<p class="first-row-text">联系我们</p>
+					</div>
+					<div class="second-row">
+						<p class="first-row-text">下单指南</p>
+						<p class="first-row-text">媒体介绍</p>
+					</div>
+				</div>
+				<div class="col-sm-4 weichat-box footer-little-box">
+					<div class="weichat-text">
+						<p>TEL:400-0000-000</p>
+						<p>企业QQ:123456789</p>
+						<p>微信号XXXXXXX</p>
+					</div>
+					<img class="weichat-img" src="images/erweima_07.png">
+				</div>
+			</div>
+	 	</div>
+
+	 	<div class="foot">
+	 		<p class="foot-text">北京五一包装科技有限公司Copyright©2015 51baozhuang.com015 Allrights reserved.  京icp备999999999-1</p>
+
+	 	</div>
+	</footer>
+</body>
+</html>
