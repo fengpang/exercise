@@ -1,0 +1,86 @@
+@charset "utf-8";
+body {
+  background-color: #eff0f4;
+  margin: 0;
+}
+html {
+  font-size: 312.5%;
+}
+header {
+  background-color: #5fc0cd;
+}
+header h1 {
+  font-size: 0.25rem;
+  color: #ffffff;
+  padding: 0.26rem;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+}
+header .close {
+  position: absolute;
+  font-size: 0.2rem;
+  right: 0.3rem;
+  top: 0.3rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+header .login {
+  position: absolute;
+  font-size: 0.2rem;
+  right: 0.3rem;
+  top: 0.3rem;
+  color: #ffffff;
+  text-decoration: none;
+  left: 0.3rem;
+}
+main {
+  margin-bottom: 0.69rem;
+}
+main .input-box {
+  margin-top: 0.16rem;
+  padding: .24rem 0;
+  background: #ffffff url(images/登陆_02.png) no-repeat 0.35rem;
+  background-size: .35rem;
+}
+main .input-box-second {
+  margin-top: 0.16rem;
+  padding: .24rem 0;
+  background: #ffffff url(images/登陆_02.png) no-repeat 0.35rem;
+  background: #ffffff url(images/登陆_05.png) no-repeat 0.35rem;
+  background-size: .35rem;
+}
+main .input {
+  padding: .12rem 0 .12rem .36rem;
+  border: none;
+  border-left: 2px solid #eaedee;
+  display: block;
+  outline: none;
+  margin-left: .98rem;
+  font-size: 0.2rem;
+  width: 100%;
+}
+main input::-webkit-input-placeholder {
+  color: #e1e5e7;
+  opacity: 1;
+}
+footer button {
+  padding: .34rem 0;
+  background-color: #5fc0cd;
+  color: #ffffff;
+  font-size: 0.25rem;
+  letter-spacing: 1em;
+  width: 100%;
+  display: block;
+  border: none;
+}
+footer button:hover {
+  cursor: pointer;
+}
+footer p {
+  font-size: .2rem;
+  color: #5fc0cd;
+  float: right;
+  margin: 0;
+  margin-top: .1rem;
+}
