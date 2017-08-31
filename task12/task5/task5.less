@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+html {
+	font-size: 312.5%;
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+@blue: #5fc0cd;
+@h1-font: .36rem;
+@main-font: .32rem;
+@f: fixed;
+@w: 100%;
+@border-b: solid 1px #5fc0cd;
+@b-r: .1rem;
+@border-li: solid 1px #e1e5e7;
+@height: 1rem;
+@white: #fff;
+
+header {
+	height: @height;
+	font-size: @h1-font;
+	position: @f;
+	background-color: @blue;
+	width: @w;
+	top: 0;
+	h1 {
+		position: @f;
+		left: @w*0.42;
+		color: @white;
+		font-size: @h1-font;
+	}
+} 	.back {
+	position: @f;
+	width: .3rem;
+	margin: .2rem 0 0 .2rem;
+}
+
+//felx
+.li () {
+	display: flex;
+	align-items: center;
+}
+
+//head
+/*head*/
+.head {
+	.li;
+	margin-top: @height;
+	height: 3.3rem;
+	background: url(images/背景.png) no-repeat;
+	background-size: @w @w;
+	.header{
+		margin: .8rem .3rem .8rem .3rem;
+		width: 1.7rem;
+	}
+	.names{
+		background: url(images/task5map_03.png) no-repeat .06rem .85rem;
+		background-size: 0.26rem;
+		margin: 1.15rem .3rem 1.25rem .5rem;
+		line-height: 0.05rem;
+		color: @white;
+		.age-name {
+			.li;
+			.name {
+			font-size: @h1-font;
+		}	
+			.age {
+			font-size: @h1-font+0.01-0.09;
+			margin-left: .1rem;
+		}
+		}
+		.position {
+			font-size: .24rem;
+			padding-left: .4rem;
+		}
+	}
+}
+
+//ul
+/*ul*/ 
+ul {
+	font-size: @main-font;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: url(images/task5-1_10.png) no-repeat .3rem .35rem;
+	background-size: .05rem;
+	margin-bottom: 3rem;
+	.skills {
+		padding: .35rem .6rem;
+		border-bottom: @border-li;
+	}
+	.main-list {
+		.li;
+		border-bottom: @border-li;
+		margin:  0 0.35rem;
+    	padding: 0.35rem;
+    	.bord {
+			color: #999999;
+			padding: 0 .27rem 0 0;
+			border-right: @border-li;
+		}
+		.specific {
+			margin-left: .27rem;
+		}
+		.price {
+			color: red;
+		}
+		.long-text {
+			width: @w*0.7;
+		}
+	}
+	.main-live-food {
+    display: flex;
+    padding-left: .72rem;
+    background: url(images/task5-1_11.png) no-repeat .2rem .38rem,
+                url(images/task5-1_11.png) no-repeat 1.9rem .39rem;
+    background-size: .4rem;
+    .food {
+	margin-left: .8rem;
+	}
+	.live {
+		padding-right: .27rem;
+		border-right: @border-li;
+	}
+	}
+
+}
+
+//white-box
+.white-box {
+	height: @height*3;
+	width: @w;
+}
+
+//footer
+/*footer*/
+footer {
+	display: flex;
+	position: fixed;
+	background-color: @white;
+	bottom: 0;
+	width: @w;
+	.messge{
+		font-size: @main-font;
+		border: @border-b;
+		color: @blue;
+		width: @w*0.4781;
+		background-color: @white;
+		padding: .25rem 0;
+		margin-left: @w*0.0578125;
+		margin-bottom: .4rem;
+		border-radius: .1rem;
+		outline: none;
+		&:hover{
+			cursor: pointer;
+			transform: scale(1.005,1.005);
+		}
+	}
+	.contact{
+		.messge;
+		color: @white;
+		background-color: @blue;
+		margin-left: @w*0.0578125;
+		margin-right: @w*0.0390625;
+	}
+}
