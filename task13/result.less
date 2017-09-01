@@ -1,0 +1,151 @@
+@charset"utf-8";
+
+@blue: #29bde0;
+@orange: #ffc865;
+@gray: #a6a6a6;
+@red: #f66f6f;
+@orange_b: #fbb435;
+@bg: #99dff0;
+
+@font_h1: .34rem;
+@font_h2: .33rem;
+@f_result: .26rem;
+@f_button: .4rem;
+
+@height: 1rem;
+@w: 100%;
+
+html {
+	font-size: 312.5%;
+}
+body {
+	margin: 0 auto;
+	max-width: 750px;
+}
+header {
+	position: fixed;
+	top: 0;
+	height: @height;
+	width: @w;
+	max-width: 750px;
+	background: @blue;
+	z-index: 999;
+	border-bottom: solid 1px #74d4eb;
+	h1 {
+		margin: .19rem 0 .19rem 0;
+		font-size: @font_h1;
+		color: #fff;
+		text-align: center;
+
+	}
+	.home {
+		position: fixed;
+		top: .2rem;
+		left: .2rem;
+		max-width: .7rem;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.explain {
+		position: fixed;
+		top: .1rem;
+		right: .2rem;
+		max-width: .7rem;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+/* main */
+main {
+	margin-top: 1rem;
+	max-width: 750px; 
+	.main-top {
+		padding: .23rem 12.1875%;
+		background-color: @blue;
+		.winner {
+			text-align: center;
+			width: 90%;
+    		margin: 0 5%;
+		}
+		.amazing {
+			font-size: .33rem;
+			font-weight: bold;
+			color: @orange;
+		}
+		.result {
+			margin-top: .6rem;
+			font-size: @f_result;
+			color: #fff;
+		}
+	}
+	.informations {
+		padding-top: .23rem;
+		margin-top: -1.2rem;
+		padding-bottom: 1.6rem;
+		.second-row {
+			margin-top: -.95rem;
+		}
+		.row {
+			padding: .23rem 12.1875%;
+			padding-bottom: .34rem;
+			border-bottom: solid 1px #dddddd;
+			.first-day {
+				display: inline-block;
+				margin: 0;
+				font-size: .3rem;
+				color: #515151;
+			}
+			.times {
+				display: inline-block;
+				margin: 0;
+				margin-left: 45%;
+				font-size: .2rem;
+				color: #d5d5d5;
+			}
+			.day {
+				font-size: .26rem;
+				color: #a6a6a6;
+				margin: 0;
+			}
+			.night {
+				.day;
+				margin-top: 0;
+				margin-bottom: .14rem;
+			}
+		}
+	}
+}
+
+
+//footer
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 750px;
+	background-color: rgba(153, 223, 240, 0.7);
+	.again {
+		margin-bottom: .2rem;
+		margin-left: 3.75%;
+		width: 42.96875%;
+		height: .86rem;
+		font-size: @f_button;
+		color: #fff;
+		background-color: @red;
+		border: none;
+		border-radius: .1rem;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.share {
+		.again;
+		background-color: @orange_b;
+	}
+	a {
+		text-decoration: none;
+	}
+}

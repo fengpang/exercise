@@ -1,0 +1,148 @@
+@charset "utf-8";
+html {
+  font-size: 350%;
+}
+body {
+  margin: 0 auto;
+  max-width: 750px;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  max-width: 750px;
+  background-color: #69d1e9;
+}
+header .header-top {
+  height: .8rem;
+}
+header .header-top .options {
+  float: left;
+  margin-left: .2rem;
+  margin-top: .3rem;
+  max-width: .5rem;
+}
+header .header-top h1 {
+  position: fixed;
+  left: 50%;
+  font-size: 0.34rem;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  transform: translateX(-50%);
+}
+header .header-top .close {
+  float: left;
+  margin-left: .2rem;
+  margin-top: .3rem;
+  max-width: .5rem;
+  float: right;
+  margin-right: .2rem;
+}
+header .first-row {
+  position: relative;
+  background-color: #b9e9f5;
+}
+header .first-row .vote-text {
+  padding: .3rem 0 .3rem .46rem;
+  font-size: 0.26rem;
+}
+header .first-row .trigon {
+  position: absolute;
+  top: .949rem;
+  left: .71rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #b9e9f5 transparent transparent transparent;
+  border-width: .14rem;
+}
+header .first-row .play {
+  position: absolute;
+  right: .2rem;
+  top: .15rem;
+  max-width: .6rem;
+}
+header .click {
+  margin: .1rem 0 0 .78rem;
+  font-size: 0.24rem;
+  color: #ffffff;
+}
+/* vavatar */
+main {
+  margin-top: 2.58rem;
+  max-width: 750px;
+  background-color: #69d1e9;
+  padding: .44rem 0 1.9rem 0;
+}
+main .avatar-container {
+  width: 100%;
+}
+main .avatar-container .row {
+  display: flex;
+  margin-bottom: .9rem;
+}
+main .avatar-container .row .avatar {
+  position: relative;
+  margin: 0 6.16666667%;
+  width: 19%;
+  height: 19vw;
+  max-height: 142.5px;
+  font-size: 0.3rem;
+  background-color: #f5c97b;
+  border: solid 1vw #ffffff;
+  text-align: center;
+}
+main .avatar-container .row .avatar .number {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 21.43%;
+  color: #ffffff;
+  font-size: 0.2276rem;
+  background-color: #83b09a;
+}
+main .avatar-container .row .avatar .icons {
+  position: absolute;
+  left: -7%;
+  top: 80%;
+  width: 130%;
+  height: 100%;
+  background: url(images/刀.png) no-repeat 0%, url(images/放大镜.png) no-repeat 30%, url(images/轮盘_15.png) no-repeat 60%, url(images/十字架_17.png) no-repeat 90%;
+  display: none;
+  background-size: .3rem;
+}
+main .avatar-container .row .avatar:hover .icons {
+  display: block;
+}
+main .avatar-container .row .avatar:hover {
+  cursor: pointer;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 1.9rem;
+  width: 100%;
+  max-width: 750px;
+  background-color: #69d1e9;
+}
+footer button {
+  margin-top: .42rem;
+  margin-left: 12.03125%;
+  height: .87rem;
+  width: 76.5625%;
+  color: #ffffff;
+  font-size: .4rem;
+  background-color: #fbb435;
+  border: none;
+}
+footer button:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  main .avatar-container .row .avatar {
+    border: solid 7.5px #fff;
+  }
+}

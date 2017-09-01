@@ -1,0 +1,120 @@
+@charset"utf-8";
+
+//变量
+@font_top: .3484rem;
+@font_h1: .3774rem;
+@font_v: .3208rem;
+@font_p: .2453rem;
+@margin_p: .28rem;
+@margin_top: .26rem;
+@padding_top: .42rem;
+@padding_h1: .27rem;
+@blue: #69d1e9;
+@gray: #f0f0f0;
+@white: #fff;
+@orange: #fbb435;
+@border: solid 1px #c9c9c9;
+@border_h1: solid 1px #fdd793;
+@height: 1rem;
+@w: 100%;
+html {
+	font-size: 350%;
+}
+body {
+	margin: 0 auto;
+	max-width: 750px;
+}
+a {
+	text-decoration: none;
+	&:visited {
+		color: none;
+	}
+}
+header {
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	height: @height;
+	width: @w;
+	max-width: 750px;
+	background-color: @blue;
+	.options {
+		margin-bottom: .2rem;
+		margin-left: .2rem;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+main {
+	max-width: 750px;
+	margin-top: 1rem;
+	padding: .26rem .35rem .61rem .35rem;
+	background-color: @gray;
+	text-align: center;
+	.last-game {
+		margin-bottom: @margin_top;
+		padding-top: @padding_top;
+		padding-bottom: @padding_top;
+		font-size: @font_top;
+		color: #9a9a9a;
+		background: @white url(images/backicon_07.png) no-repeat 97%;
+		background-size: .25rem;
+		border: @border;
+	}
+	.game-versions {
+		position: relative;
+ 		background-color: @white;
+ 		border: @border;
+ 		.triangle {
+ 			position: absolute;
+ 			top: 50%;
+ 			left: 100%;
+ 			width: 0;
+ 			height: 0;
+ 			border-width: .24rem;
+ 			border-color: transparent transparent transparent @orange;
+ 			border-style: solid;
+ 			transform: translateX(-100%);
+ 		}
+ 		h1 {
+			padding-top: .29rem;
+			padding-bottom: @padding_h1;
+			font-size:  @font_h1;
+			color: @orange;
+			border-bottom: @border_h1;
+		}
+		.versions {
+			position: relative;
+			margin: @margin_p+.01 .55rem 0 .55rem;
+			padding-top: .52rem;
+			padding-bottom: .52rem;
+			font-size: @font_v;
+			color: @white;
+			background-color: @blue;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		p {
+			margin: @margin_p 0 0 0;
+			font-size: @font_p;
+			color: #787878;
+		}
+		.circles {
+			margin-top: -.7rem;
+			span {
+				margin-left: -.2rem;
+				height: .16rem;
+				width: .16rem;
+				background-color: @gray;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.blue-one {
+					background-color: @blue;
+			}
+		}
+	}
+}

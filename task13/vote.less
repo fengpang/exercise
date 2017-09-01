@@ -1,0 +1,166 @@
+@charset"utf-8";
+//变量
+@w: 100%;
+@height: 1rem;
+@blue: #69d1e9;
+@white: #fff;
+@orange: #fbb435;
+@blue_l: #b9e9f5;
+@green: #83b09a;
+@font_h1: .34rem;
+@f_vote: .26rem;
+@f_click: .24rem;
+@f_main: .3rem;
+@f_num: .2276rem;
+@f_btton: .4rem;
+@border: solid 1vw #fff;
+html {
+	font-size: 350%;
+}
+body {
+	margin: 0 auto;
+	max-width: 750px;
+}
+header {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: @w;
+	max-width: 750px;
+	background-color: @blue;
+	.header-top{
+		height: .8rem;
+		.options {
+		float: left;
+		margin-left: .2rem;
+		margin-top: .3rem;
+		max-width: .5rem;
+		}
+		h1 {
+			position: fixed;
+			left: 50%;
+			font-size: @font_h1;
+			font-weight: normal;
+	    	color: @white;
+	    	text-align: center;
+	    	transform: translateX(-50%);
+		}
+		.close {
+			.options;
+			float: right;
+			margin-right: .2rem;
+		}
+	}
+	.first-row {
+		position: relative;
+		background-color: @blue_l;
+		.vote-text{
+			padding: .3rem 0 .3rem .46rem;
+			font-size: @f_vote;
+		}
+		.trigon {
+			position: absolute;
+			top: .949rem;
+			left: .71rem;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-color: @blue_l transparent transparent transparent;
+			border-width: .14rem;
+		}
+		.play {
+			position: absolute;
+			right: .2rem;
+			top: .15rem;
+			max-width: .6rem;
+		}
+	}
+	.click {
+			margin: .1rem 0 0 .78rem;
+			font-size: @f_click;
+			color: @white;
+		}
+}
+//mian
+/* vavatar */
+main {
+	margin-top: 2.58rem;
+	max-width: 750px;
+	background-color: @blue;
+	padding: .44rem 0 1.9rem 0;
+	.avatar-container {
+		width: 100%;
+		.row{
+			display: flex;
+			margin-bottom: .9rem;
+			.avatar {
+				position: relative;
+				margin: 0 6.16666667%;
+				width: 19%;
+				height: 19vw;
+				max-height: 142.5px;
+				font-size: @f_main;
+				background-color: #f5c97b;
+				border: @border;
+				text-align: center;
+				.number {
+					position: absolute;
+					bottom: 0;
+					margin: 0;
+					width: 100%;
+					height: 21.43%;
+					color: @white;
+					font-size: @f_num;
+					background-color: @green;
+				}
+				.icons {
+					position: absolute;
+					left: -7%;
+					top: 80%;
+					width: 130%;
+					height: 100%;
+					background: url(images/刀.png) no-repeat 0%,
+								url(images/放大镜.png) no-repeat 30%,
+								url(images/轮盘_15.png) no-repeat 60%,
+								url(images/十字架_17.png) no-repeat 90%;
+				    display: none;
+				    background-size: .3rem;
+
+				}
+				&:hover .icons {
+					display: block;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+			}
+        }
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	height: 1.9rem;
+	width: 100%;
+	max-width: 750px;
+	background-color: @blue;
+	button {
+		margin-top: .42rem;
+		margin-left: 12.03125%;
+		height: .87rem;
+		width: 76.5625%;
+		color: @white;
+		font-size: .4rem;
+		background-color: @orange;
+		border: none;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+@media screen and (min-width: 750px) {
+	main .avatar-container .row .avatar {
+		border: solid 7.5px #fff; 
+	}
+}
