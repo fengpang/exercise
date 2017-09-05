@@ -1,0 +1,211 @@
+@charset "utf-8";
+main {
+  background-color: #fafafa;
+  padding-bottom: 4.7rem;
+}
+h3 {
+  margin: 0 9.7%;
+  padding-bottom: 3.3rem;
+  padding-top: 3.1rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #edf1f2;
+}
+h3 .head-word {
+  color: #29b078;
+  display: inline-block;
+}
+ul.derctions {
+  padding: 2.3rem 0;
+  margin: 0 9.7%;
+  font-size: 1.4rem;
+  border-bottom: solid 1px #edf1f2;
+  list-style-type: none;
+}
+ul.derctions li {
+  margin-right: 2.6rem;
+  display: inline-block;
+}
+ul.derctions li:hover {
+  background-color: #29b078;
+  color: #fff;
+  cursor: pointer;
+}
+ul.derctions .derction {
+  color: #999999;
+}
+ul.derctions .derction:hover {
+  background-color: #fafafa;
+  color: #999;
+  cursor: auto;
+}
+h1 {
+  padding: 3.2rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #edf1f2;
+}
+.main-container {
+  padding: 0 9.7%;
+}
+.main-container p {
+  padding: 1.2rem 0;
+}
+.main-container .main-row {
+  margin: 4.7rem -4.7%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container .main-row .col-4 {
+  position: relative;
+  padding: 0 20px;
+  width: 33.333333%;
+  box-sizing: border-box;
+}
+.main-container .main-row .col-4:hover .hover {
+  display: block;
+  cursor: pointer;
+}
+.main-container .main-row .col-4 .hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 222;
+  background-color: rgba(61, 61, 61, 0.7);
+  display: none;
+}
+.main-container .main-row .col-4 .hover:hover {
+  cursor: pointer;
+}
+.main-container .main-row .col-4 .hover h4 {
+  margin-top: 3.6rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+.main-container .main-row .col-4 .hover .hover-text {
+  padding: 20% 1.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 2.5rem;
+}
+.main-container .main-row .col-4 .job-box {
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #eeeded;
+  border-radius: 5px;
+}
+.main-container .main-row .col-4 .job-box .first-row {
+  display: block !important;
+  border: none !important;
+}
+.main-container .main-row .col-4 .job-box .first-row h2 {
+  font-size: f_head;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.main-container .main-row .col-4 .job-box .rows {
+  display: flex;
+  border-bottom: 1px solid #edf1f2;
+}
+.main-container .main-row .col-4 .job-box .rows .col-5 {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 1px solid #edf1f2;
+  position: relative;
+}
+.main-container .main-row .col-4 .job-box .rows .col-5 .half {
+  margin: 0;
+  padding: 1.4rem 0;
+  padding-left: 1.3rem;
+  color: #a9a9a9;
+  white-space: nowrap;
+}
+.main-container .main-row .col-4 .job-box .rows .col-5 .needing {
+  margin: 0 1.2rem;
+}
+.main-container .main-row .col-4 .job-box .rows .col-4 {
+  width: 41.6666666%;
+  box-sizing: border-box;
+  border-right: 1px solid #edf1f2;
+}
+.main-container .main-row .col-4 .job-box .rows .col-4 .galary {
+  text-align: center;
+  padding: 4.5rem 0;
+  color: #a9a9a9;
+}
+.main-container .main-row .col-4 .job-box .rows .col-6 {
+  width: 58.333333%;
+  box-sizing: border-box;
+  border-right: 1px solid #edf1f2;
+}
+.main-container .main-row .col-4 .job-box .rows .col-6 .row {
+  border-bottom: 1px solid #edf1f2;
+}
+.main-container .main-row .col-4 .job-box .rows .col-6 .row .years {
+  display: inline-block;
+  padding-left: 1.3rem;
+}
+.main-container .main-row .col-4 .job-box .rows .col-6 .row .money {
+  float: right;
+  padding-right: 1.3rem;
+}
+.main-container .main-row .col-4 .job-box .rows .col-6 .third-row {
+  border: none;
+}
+.main-container .main-row .col-4 .job-box .rows .diffcult {
+  border: none;
+}
+.main-container .main-row .col-4 .job-box .rows .learning {
+  margin: 0;
+  padding: 1.4rem 0 1.4rem 1.2rem;
+}
+.main-container .main-row .col-4 .job-box .rows .should {
+  margin: 0;
+  padding: 1.4rem 0 1.4rem 1.2rem;
+  color: #a9a9a9;
+}
+span {
+  color: red;
+}
+.main-container .main-row .col-4 .job-box .second-row {
+  border-top: 1px solid #edf1f2;
+  clear: both;
+}
+.avatar-img {
+  float: left;
+  max-width: 40%;
+  margin: 2rem .8rem 1.7rem 1.2rem;
+}
+.words {
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+.doors {
+  background: url(images/yellow-star_03.png) no-repeat 4em;
+  padding-right: 2.4rem !important;
+}
+.stars {
+  background: url(images/yellow-star_03.png) no-repeat 6em, url(images/yellow-star_03.png) no-repeat 8em;
+}
+@media screen and (max-width: 1030px) {
+  .main-container .main-row .col-4 {
+    width: 100%;
+  }
+  .main-container .main-row .col-4 .job-box {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  ul.derctions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  ul.derctions li {
+    margin: 0 auto;
+    width: 5em;
+    margin-bottom: 1rem;
+  }
+}

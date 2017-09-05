@@ -1,0 +1,124 @@
+@charset"utf-8";
+
+@w: 100%;
+
+@f_contackt: 1.4rem;
+@f_nav: 1.602rem;
+
+@white: #fff;
+@green: #29b078;
+
+@border: .4rem solid #fff; 
+
+@m: 9.7%;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+a {
+	text-decoration: none;
+	&:visited {
+		color: #fff;
+	}
+	&:link {
+		color: #fff;
+	}
+}
+.head {
+	width: @w;
+	.contact-way {
+		margin-left: @m;
+		padding: 1.2rem 0 1.3rem 0;
+		font-size: @f_contackt;
+		color: @green;
+		display: inline-block;
+	}
+	.icons {
+		float: right;
+		margin-right: @m;
+		.icons-img {
+			max-width: 12rem;
+			margin-top: .85rem;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* nav未折叠 */
+.nav-container {
+	display: flex;
+    justify-content: flex-end;
+	width: @w;
+	background: @green;
+	.nav {
+		margin: 0;
+		padding-left: 0;
+		margin-right: calc(9.7vw-3.15rem);
+		color: @white;
+		list-style-type: none;
+		.nav-links {
+			display: inline-block;
+			padding: 4.1rem 3.15rem 3.7rem 3.15rem;
+			font-size: 1.602rem;
+			&:hover {
+				border-bottom: @border;
+				cursor: pointer;
+			}
+		}   
+	}
+	@media screen and(max-width: 768px){
+			.nav{
+				display: none;
+			}
+		}
+}
+
+
+
+// 折叠后
+/* 折叠后 */
+label {
+	margin-right: 1rem;
+    margin-top: 1rem;
+	&:hover {
+    	cursor: pointer;
+	}
+}
+.button {
+	max-width: 3rem;
+}
+#nav {
+	opacity: 0;
+}
+.links{
+	display: none;
+}
+#nav:checked+.links {
+	margin-top: 3.6rem;
+	margin-left: 3.6rem;
+	width: 100%;
+    color: #fff;
+    text-align: center;
+    display: block;
+
+}
+.nav-links {
+	padding: 2.05rem 3.15rem 3.7/2rem 3.15rem;
+	font-size: 1.602rem;
+}
+.nav-links:hover {
+	border-bottom: @border;
+	cursor: pointer;
+}
+@media screen and(min-width:769px) {
+	.nav-button,.links {
+		display: none !important;
+	}
+
+}

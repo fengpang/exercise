@@ -1,0 +1,105 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+a:link {
+  color: #fff;
+}
+.head {
+  width: 100%;
+}
+.head .contact-way {
+  margin-left: 9.7%;
+  padding: 1.2rem 0 1.3rem 0;
+  font-size: 1.4rem;
+  color: #29b078;
+  display: inline-block;
+}
+.head .icons {
+  float: right;
+  margin-right: 9.7%;
+}
+.head .icons .icons-img {
+  max-width: 12rem;
+  margin-top: .85rem;
+}
+.head .icons .icons-img:hover {
+  cursor: pointer;
+}
+/* nav未折叠 */
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: #29b078;
+}
+.nav-container .nav {
+  margin: 0;
+  padding-left: 0;
+  margin-right: calc(6.55vw);
+  color: #ffffff;
+  list-style-type: none;
+}
+.nav-container .nav .nav-links {
+  display: inline-block;
+  padding: 4.1rem 3.15rem 3.7rem 3.15rem;
+  font-size: 1.602rem;
+}
+.nav-container .nav .nav-links:hover {
+  border-bottom: 0.4rem solid #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .nav-container .nav {
+    display: none;
+  }
+}
+/* 折叠后 */
+label {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+label:hover {
+  cursor: pointer;
+}
+.button {
+  max-width: 3rem;
+}
+#nav {
+  opacity: 0;
+}
+.links {
+  display: none;
+}
+#nav:checked + .links {
+  margin-top: 3.6rem;
+  margin-left: 3.6rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.nav-links {
+  padding: 2.05rem 3.15rem 1.85rem 3.15rem;
+  font-size: 1.602rem;
+}
+.nav-links:hover {
+  border-bottom: 0.4rem solid #ffffff;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .nav-button,
+  .links {
+    display: none !important;
+  }
+}

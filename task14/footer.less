@@ -1,0 +1,98 @@
+@charset"utf-8";
+@w: 100%;
+@m: 0 -15px;
+@p: 0 15px;
+@margin: 0 9.7%;
+
+@white: #fff;
+@green: #29b078;
+
+@f_a: 1.4rem;
+@f_f: 1.2rem;
+
+footer {
+	color: @white;
+	background: @green;
+	.container {
+		padding: @p;
+		margin: @margin;
+		.row {
+			margin: @m;
+			display: flex;
+			.weichat-box {
+				text-align: center;
+			}
+			.col-3 {
+				padding: @p;
+				width: @w*.33333333;
+				display: inline-block;
+				font-size: @f_a;
+				white-space: nowrap;
+				.left-first-row {
+					margin-bottom: 6.8rem;
+					margin-top: 3.7rem;
+				}
+				.second-row {
+					margin-top: 2.7rem;
+					display: flex;
+					.center-first {
+						margin-right: 3.4rem
+					}
+				}
+				.third-row {
+					margin-top: 2.7rem;
+					display: flex;
+					.center-third {
+						margin-right: 3.4rem;
+					}
+				}
+				.websites {
+					margin-top: 3.7rem;
+				}
+				.about-us {
+					margin-bottom: 3.3rem;
+				}
+				.weichat {
+					margin-top: 3.9rem;
+					margin-bottom: .7rem;
+				}
+				.weichat-img {
+					border: 6px solid;
+				}
+			}
+		}
+	}
+	.foot {
+		height: 3rem;
+		font-size: @f_f;
+		text-align: center;
+		.copyright {
+			padding : .8rem 0rem;
+			border-top: solid 1px #32c086;
+		}
+	}
+}
+
+
+@media screen and(max-width: 768px) {
+	.row {
+		flex-direction: column;
+	}
+	.wechat {
+		margin-bottom: 3rem;
+	}
+	footer .container .row .col-3 .left-first-row {
+		margin-bottom: 2.8rem;
+	}
+	footer .container .row .col-3 .about-us {
+		margin-bottom: 0;
+	}
+	footer .container .row .weichat-box {
+		margin-bottom: 2.8rem;
+		text-align: left;
+	}
+	
+}
+footer a:hover {
+	text-decoration: underline;
+}
