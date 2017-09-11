@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+p{
+	float: left;
+	width: 30%;
+	height: 30vw;
+	margin:      0.5vw 1.666666667% 0.5vw 1.66666667%;
+	background-color:   #ff9800;
+	border-radius: 10px;
+}
+
+
+button {
+	float: left;
+	margin-top: 2em;
+	width: 75%;
+	margin-left: 15%;
+	height: 12vw;
+	border: none;
+	background-color: #fff;
+	border: solid 2px #ff9800;
+	outline: none;
+	border-radius: 5px;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #ff9800;
+}
