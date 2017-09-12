@@ -1,0 +1,143 @@
+@charset "utf-8";
+html {
+  font-size: 312.5%;
+}
+body {
+  margin: 0 auto;
+  max-width: 750px;
+}
+header {
+  position: fixed;
+  top: 0;
+  height: 1rem;
+  width: 100%;
+  max-width: 750px;
+  background: #29bde0;
+  z-index: 999;
+  border-bottom: solid 1px #74d4eb;
+}
+header h1 {
+  margin: .19rem 0 .19rem 0;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+}
+header .home {
+  position: fixed;
+  top: .2rem;
+  left: .2rem;
+  max-width: .7rem;
+}
+header .home:hover {
+  cursor: pointer;
+}
+header .explain {
+  position: fixed;
+  top: .1rem;
+  right: .2rem;
+  max-width: .7rem;
+}
+header .explain:hover {
+  cursor: pointer;
+}
+/* main */
+main {
+  margin-top: 1rem;
+  max-width: 750px;
+}
+main .main-top {
+  padding: .23rem 12.1875%;
+  background-color: #29bde0;
+}
+main .main-top .winner {
+  text-align: center;
+  width: 90%;
+  margin: 0 5%;
+}
+main .main-top .amazing {
+  font-size: .33rem;
+  font-weight: bold;
+  color: #ffc865;
+}
+main .main-top .result {
+  margin-top: .6rem;
+  font-size: 0.26rem;
+  color: #fff;
+}
+main .informations {
+  padding-top: .23rem;
+  margin-top: -1.2rem;
+  padding-bottom: 1.6rem;
+}
+main .informations .second-row {
+  margin-top: -0.95rem;
+}
+main .informations .row {
+  padding: .23rem 12.1875%;
+  padding-bottom: .34rem;
+  border-bottom: solid 1px #dddddd;
+}
+main .informations .row .first-day {
+  display: inline-block;
+  margin: 0;
+  font-size: .3rem;
+  color: #515151;
+}
+main .informations .row .times {
+  display: inline-block;
+  margin: 0;
+  margin-left: 45%;
+  font-size: .2rem;
+  color: #d5d5d5;
+}
+main .informations .row .day {
+  font-size: .26rem;
+  color: #a6a6a6;
+  margin: 0;
+}
+main .informations .row .night {
+  font-size: .26rem;
+  color: #a6a6a6;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: .14rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+  background-color: rgba(153, 223, 240, 0.7);
+}
+footer .again {
+  margin-bottom: .2rem;
+  margin-left: 3.75%;
+  width: 42.96875%;
+  height: .86rem;
+  font-size: 0.4rem;
+  color: #fff;
+  background-color: #f66f6f;
+  border: none;
+  border-radius: .1rem;
+}
+footer .again:hover {
+  cursor: pointer;
+}
+footer .share {
+  margin-bottom: .2rem;
+  margin-left: 3.75%;
+  width: 42.96875%;
+  height: .86rem;
+  font-size: 0.4rem;
+  color: #fff;
+  background-color: #f66f6f;
+  border: none;
+  border-radius: .1rem;
+  background-color: #fbb435;
+}
+footer .share:hover {
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+}

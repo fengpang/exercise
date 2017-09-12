@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>分配身份</title>
+	<link rel="stylesheet" href="part.css">
+</head>
+<body>
+	<header>
+		<img class="options" src="images/back_3.png">
+		<h1>参数设置</h1>
+		<img class="close" src="images/叉.png">
+	</header>
+	<main>
+		<div class="main-box">
+			<div class="title">
+				玩家配比
+			</div>
+			<div class="part-box">
+				<div id="part">
+					<div style="position: relative;">杀手<img class="k" src="images/killer.jpg"><p id="killer"></p>人</div>
+					<div style="position: relative;">平民<img class="p" src="images/people.jpg"><p id="people"></p>人</div>					
+				</div>
+			</div>
+		</div>
+		<div id=set onchange="get()" class="cilck">
+					
+		</div>
+		<div class="member-numbers">
+			<p>玩家人数<input onchange="get()" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="number" NAME="Text2" placeholder="6">人 <span>(请输入4-18之间的玩家人数)</span></p>
+		</div>
+	</main>
+	<footer>
+		<a href="">
+			<button type="button">
+				去发牌
+			</button>
+		</a>
+	</footer>
+	<script src="part.js"></script>
+</body>
+</html>

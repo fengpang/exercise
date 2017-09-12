@@ -1,0 +1,101 @@
+@charset "utf-8";
+html {
+  font-size: 350%;
+}
+body {
+  margin: 0 auto;
+  max-width: 750px;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 1rem;
+  width: 100%;
+  max-width: 750px;
+  background-color: #69d1e9;
+}
+header .options {
+  margin-bottom: .2rem;
+  margin-left: .2rem;
+}
+header .options:hover {
+  cursor: pointer;
+}
+main {
+  max-width: 750px;
+  margin-top: 1rem;
+  padding: .26rem .35rem .61rem .35rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+main .last-game {
+  margin-bottom: 0.26rem;
+  padding-top: 0.42rem;
+  padding-bottom: 0.42rem;
+  font-size: 0.3484rem;
+  color: #9a9a9a;
+  background: #ffffff url(images/backicon_07.png) no-repeat 97%;
+  background-size: .25rem;
+  border: solid 1px #c9c9c9;
+}
+main .game-versions {
+  position: relative;
+  background-color: #ffffff;
+  border: solid 1px #c9c9c9;
+}
+main .game-versions .triangle {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-width: .24rem;
+  border-color: transparent transparent transparent #fbb435;
+  border-style: solid;
+  transform: translateX(-100%);
+}
+main .game-versions h1 {
+  padding-top: .29rem;
+  padding-bottom: 0.27rem;
+  font-size: 0.3774rem;
+  color: #fbb435;
+  border-bottom: solid 1px #fdd793;
+}
+main .game-versions .versions {
+  position: relative;
+  margin: 0.29rem 0.55rem 0 0.55rem;
+  padding-top: .52rem;
+  padding-bottom: .52rem;
+  font-size: 0.3208rem;
+  color: #ffffff;
+  background-color: #69d1e9;
+}
+main .game-versions .versions:hover {
+  cursor: pointer;
+}
+main .game-versions p {
+  margin: 0.28rem 0 0 0;
+  font-size: 0.2453rem;
+  color: #787878;
+}
+main .game-versions .circles {
+  margin-top: -0.7rem;
+}
+main .game-versions .circles span {
+  margin-left: -0.2rem;
+  height: .16rem;
+  width: .16rem;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: inline-block;
+}
+main .game-versions .circles .blue-one {
+  background-color: #69d1e9;
+}
