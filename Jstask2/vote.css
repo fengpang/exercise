@@ -74,10 +74,10 @@ header .click {
 }
 /* vavatar */
 main {
-  margin-top: 2.58rem;
   max-width: 750px;
   background-color: #69d1e9;
-  padding: .44rem 0 1.9rem 0;
+  padding: 3.44rem 0 1.9rem 0;
+  overflow-x: hidden;
 }
 main .avatar-container {
   width: 100%;
@@ -86,18 +86,21 @@ main .avatar-container .row {
   display: flex;
   margin-bottom: .9rem;
 }
-main .avatar-container .row .avatar {
-  position: relative;
-  margin: 0 6.16666667%;
-  width: 19%;
-  height: 19vw;
-  max-height: 142.5px;
-  font-size: 0.3rem;
-  background-color: #f5c97b;
-  border: solid 1vw #ffffff;
-  text-align: center;
+.avatar {
+    position: relative;
+    margin: 0 5.166667%;
+    width: 19%;
+    height: 19vw;
+    max-height: 142.5px;
+    font-size: 0.3rem;
+    background-color: #f5c97b;
+    border: solid 1vw #ffffff;
+    text-align: center;
+    line-height: .9rem;
+    float: left;
+    margin-top: .6rem;
 }
-main .avatar-container .row .avatar .number {
+ .number {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -106,22 +109,32 @@ main .avatar-container .row .avatar .number {
   color: #ffffff;
   font-size: 0.2276rem;
   background-color: #83b09a;
+  line-height: .5rem;
 }
-main .avatar-container .row .avatar .icons {
+ .icons {
   position: absolute;
   left: -7%;
   top: 80%;
   width: 130%;
   height: 100%;
-  background: url(images/刀.png) no-repeat 0%, url(images/放大镜.png) no-repeat 30%, url(images/轮盘_15.png) no-repeat 60%, url(images/十字架_17.png) no-repeat 90%;
+  background: url(images/刀.png) no-repeat 40%;
   display: none;
-  background-size: .3rem;
+  background-size: .5rem;
 }
-main .avatar-container .row .avatar:hover .icons {
+.avatar:hover .icons {
   display: block;
 }
-main .avatar-container .row .avatar:hover {
+.avatar:hover {
   cursor: pointer;
+}
+.num {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    line-height: .4rem;
+    text-align: center;
+    width: 100%;
+    background-color: #83b09a;
 }
 footer {
   position: fixed;

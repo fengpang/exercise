@@ -1,0 +1,129 @@
+html {
+	font-size: 350%;
+}
+body {
+	margin: 0 auto;
+	max-width: 750px;
+}
+
+/* header part */
+header {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	padding-bottom: .2rem;
+	height: .8rem;
+	width: 100%;
+	max-width: 750px;
+	background-color: #69d1e9;
+	border-bottom: 1px solid #74d4eb;
+}
+header .options {
+	margin: .3rem 0 .2rem .2rem;
+	max-width: .35rem;
+	transform: translateY(-17%)
+}
+
+h1 {
+	position: fixed;
+	left: 50%;
+	top: .1rem;
+	font-size: 0.34rem;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.close {
+	float: left;
+	margin-left: .2rem;
+	margin-top: .3rem;
+	max-width: .5rem;
+	float: right;
+	margin-right: .2rem;
+}
+
+/* main */
+main {
+	padding-top: 1.1rem;
+	background: #fcfcfc;
+	padding-bottom: 10rem;
+}
+.days {
+    text-align: center;
+    font-size: 20px;
+    color: #69d1e9;
+    margin: 0 1%;
+    padding: .3rem 0;
+    background: white;
+    box-shadow: 0px 0px 3px grey, 0px 0px 1px grey;
+    margin-top: .2rem;
+}
+.games {
+	font-size: 20px;
+	text-align: center;
+	background: #fff;
+    box-shadow: 0px 0px 3px grey, 0px 0px 1px grey;
+    padding: .3rem 23%;
+    margin: 0 1%;
+    margin-top: .2rem;
+}
+.kill,.last-word,.speaking,.vote{
+	background: #69d1e9;
+    margin: .2rem;
+    padding: .2rem;
+    color: #fff;
+	background: #69d1e9;
+}
+.kill:hover,.last-word:hover,.speaking:hover,.vote:hover{
+	cursor: pointer;
+}
+#death {
+	font-size: .3rem;
+	margin: 0;
+	color: red;
+    white-space: nowrap;
+}
+
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+  background-color: rgba(153, 223, 240, 0.7);
+}
+footer .again {
+  margin-bottom: .2rem;
+  margin-left: 3.75%;
+  width: 42.96875%;
+  height: .86rem;
+  font-size: 0.4rem;
+  color: #fff;
+  background-color: #fbb435;
+  border: none;
+  border-radius: .1rem;
+}
+footer .again:hover {
+  cursor: pointer;
+}
+footer .share {
+  margin-bottom: .2rem;
+  margin-left: 3.75%;
+  width: 42.96875%;
+  height: .86rem;
+  font-size: 0.4rem;
+  color: #fff;
+  background-color: #f66f6f;
+  border: none;
+  border-radius: .1rem;
+  background-color: #fbb435;
+}
+footer .share:hover {
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+}

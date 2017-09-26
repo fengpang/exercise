@@ -48,7 +48,7 @@ h1 {
 main {
 	margin-top: 1rem;
 	padding: .2rem;
-	height: 80vh; 
+	height: 80vh;
 	background-color: #f0f0f0;
 }
 .main-box {
@@ -138,6 +138,10 @@ main {
 }
 #number:hover {
 	background-color: pink;
+}
+input::-webkit-input-placeholder {
+	color: gary;
+	opacity: 0.15;
 }
 span {
 	color: orange;

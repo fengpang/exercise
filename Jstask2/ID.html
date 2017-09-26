@@ -2,9 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width;initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 	<title>查看身份</title>
 	<link rel="stylesheet" href="ID.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script src="ID.js"></script>
 </head>
 <body>
 	<header>
@@ -14,14 +17,16 @@
 	</header>
 	<main>
 		<div class="id-box">
-			<span class="circle">3</span>
-			<img class="kingimage" src="images/king_3.png">
+			<span id="circle">1</span>
+			<div id="turn-box">
+				<img id="wow" src="images/组 2.png">
+				<p id="status"></p>
+			</div>
+			<img id="kingimage" src="images/king_3.png">
 		</div>
 	</main>
 	<footer>
-		<a href="result.html">
-			<button type="button" name="lalala">查看1号身份</button>
-		</a>
+			<button id="look" type="button" name="lalala">查看1号身份</button>
 	</footer>
 </body>
 </html>
