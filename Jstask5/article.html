@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<Link rel="stylesheet" href="article.css">
+  	<script src="article.js"></script>
+</head>
+	<header>
+		<div class="options">
+			<span>猎头</span>
+			<span style="margin-right: 30px border-right: solid 1px gary;">user</span>
+			<img class="sign-out" src="images/out.png">
+		</div>
+	</header>
+    <main ui-view>
+    	<div class="search-box">
+	    	<div class="search">
+	    		<div class="first-row">
+	    			<b>发布时间</b><input class="date-input" type="text" name=""><span class="line">——</span>
+	    			<input class="date-input" type="text" name="">
+	    			<span><b>类型</b></span>
+	    			<select class="type">
+	    				<option>全部</option>
+	    				<option>啦啦啦</option>
+	    			</select>
+	    		</div>
+	    		<div class="second-row">
+	    			<span><b>状态</b></span>
+	    			<select class="status">
+	    				<option>全部</option>
+	    				<option>啦啦啦</option>
+	    			</select>
+	    		</div>
+	    	</div>
+	    	<div class="buttons">
+	    		<button>清空</button>
+	    		<button>搜索</button>
+	    	</div>
+	    </div>
+	    <div class="main-list">
+		<div class="list-head">
+    		<b>Article列表</b>
+    		<button ui-sref="article.adding" class="add">新增</button>
+    	</div>
+	    <table class="table table-striped">
+	    	<thead>
+	    		<tr>
+	    			<th>ID</th>
+	    			<th>名称</th>
+	    			<th>类型</th>
+	    			<th>发布时间</th>
+	    			<th>修改时间</th>
+	    			<th>发布者</th>
+	    			<th>状态</th>
+	    			<th>操作</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr ng-repeat="X in dataset">
+	    			<td>{{X.id}}</td>
+	    			<td>{{X.title}}</td>
+	    			<td>{{X.type}}</td>
+	    			<td>{{X.createAt}}</td>
+	    			<td>{{X.updateAt}}</td>
+	    			<td>{{X.author}}</td>
+	    			<td>{{X.status}}</td>
+				</tr>
+	    	</tbody>
+	    </table>
+	    </div>
+    </main>
+</html>

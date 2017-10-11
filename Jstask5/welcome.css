@@ -1,0 +1,104 @@
+body {
+	background: #fbfbfb;
+}
+ul {
+    position: fixed;
+	width: 150px;
+	background: #222939;
+	padding-bottom: 51vh;
+}
+input, select {
+    width: 140px;
+    border: 1px solid gainsboro;
+    border-radius: .3rem;
+    padding: .5em 0;
+    text-align: center;
+    background: transparent;
+    vertical-align: middle;
+}
+header {
+	border-bottom: 1px solid gainsboro;
+	margin-bottom: 30px;
+}
+b {
+	margin: 0 45px 0 30px;
+}
+.buttons button:first-child {
+	color: #fff;
+	background: #d8524e;
+	border: none;
+	border-radius: .3rem;
+	padding: .4rem 1rem;
+}
+.buttons button:nth-child(2) {
+	color: #fff;
+	background: #5ab65a;
+	border: none;
+	border-radius: .3rem;
+	padding: .4rem 1rem;
+	margin-right: 32px;
+}
+.title {
+	color: #fff;
+	text-align: center;
+}
+.nav-pills>li>a {
+	border-radius: 0px;
+}
+.nav>li>a {
+	color: #fff;
+}
+.welcome {
+	margin-left: 160px;
+	font-size: 50px;
+}
+.nav>li>a:hover {
+	background: #7a7e88;
+}.nav>li>a:focus {
+	background: #7a7e88;
+}
+.add {
+	color: #fff;
+	margin-right: 30px;
+    background: #5ab65a;
+    border: none;
+    border-radius: .3rem;
+    padding: 0 .5rem;
+}
+
+select {
+	margin-left: -2.3em;
+}
+.date-input {
+	margin-right: 50px;
+}
+.line {
+	margin-right: 50px;
+	letter-spacing: 0 !important;
+}
+.second-row {
+	margin-top: 30px;
+}
+
+.search-box {
+	padding: 20px 0;
+	border: 1px solid gainsboro;
+	overflow: hidden;
+}
+main {
+	padding:0 30px;
+}
+.main-list {
+	border: 1px solid gainsboro;
+	margin-top: 30px;
+}
+.form-control {
+	display: initial;
+	width: 80%;
+}
+input[type=file] {
+	display: initial;
+}
+.chose {
+	margin: 0;
+}

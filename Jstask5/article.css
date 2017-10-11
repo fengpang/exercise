@@ -1,0 +1,37 @@
+header {
+	height: 45px;
+}
+.options {
+	float: right;
+	margin: 10px 0;
+}
+.options span:first-child {
+	padding-right: 30px;
+	padding-left: 30px;
+	border-right: solid 1px #fff;
+}
+.options span:nth-child(2){
+	padding-right: 30px;
+	padding-left: 30px;
+	border-right: solid 1px #fff;
+}
+.sign-out {
+	padding: 0 30px;
+	max-width: 5.5em;
+}
+.search span {
+	letter-spacing: 2em;
+}
+.add {
+	float: right;
+}
+.buttons {
+	float: right;
+}
+.list-head {
+	clear: both;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid gainsboro;
+}

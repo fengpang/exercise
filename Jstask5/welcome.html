@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>后台管理</title>
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="welcome.css">
+  	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+  	<script src="https://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
+  	<script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  	<script src="welcome.js"></script>
+</head>
+<body ng-app="ngRouteExample" ng-controller="articleCtrl">
+	<div>
+		<ul class="nav nav-pills nav-stacked">
+		<p class="title">萝卜多后台管理系统</p>
+			<li><a ui-sref="one">信息管理</a></li>
+			<li><a ui-sref="article" ng-click="list()">Article管理</a></li>
+			<li><a ui-sref="three">人才管理</a></li>
+			<li><a ui-sref="four">推荐管理</a></li>
+			<li><a ui-sref="five">后台管理</a></li>
+			<li><a ui-sref="six">用户管理</a></li>
+			<li><a ui-sref="seven">内容管理</a></li>
+		</ul>
+		<div ui-view="" style="margin-left: 155px;"></div>
+	</div>
+</body>
+</html>
