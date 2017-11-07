@@ -1,0 +1,60 @@
+body {
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: auto;
+}
+h1 {
+	color: #03a9f4;
+	font-weight: normal;
+	font-size: 24px;
+	text-align: center;
+}
+.sign-box {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 40vh;
+	width: 50vw;
+	max-width: 400px;
+	background: rgba(185, 190, 199, 0.61);
+	transform:translate(-50%,-50%);
+}
+#name,#psd {
+	margin: 0 10%;
+	padding: .8rem 0;
+	padding-left: 15%;
+	margin-top: .4rem;
+	width: 65%;
+	border: none;
+	outline: none;
+}
+#name {
+	background: #fff url(../images/用户.png) no-repeat;
+	background-size: 7%;
+	background-position: 4%;
+}
+#psd {
+	background: #fff url(../images/密码.png) no-repeat;
+	background-size: 7%;
+	background-position: 4%;
+}
+button {
+	margin: 0 10%;
+	margin-top: 1rem;
+	padding: .6rem 0;
+	width: 80%;
+	color: #fff;
+	background: #03a9f4;
+	border: none;
+	border-radius: .2rem;
+	outline: none;
+}
+button:hover {
+	cursor: pointer;
+}
+#message {
+	text-align: center;
+	color: red;
+	font-size: 12px;
+	margin-top: 10px;
+}
+

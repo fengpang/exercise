@@ -1,0 +1,130 @@
+<script>
+	        /*日历控件*/
+	$(function() {
+	    $( ".selector" ).datepicker({
+	      dateFormat: "yy-mm-dd"
+	    });
+	    var dateFormat = $( ".selector" ).datepicker( "option", "dateFormat" );
+
+	    // Setter
+	    $( ".selector" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+	    $( "#from" ).datepicker({
+	      defaultDate: "+1w",
+	      changeMonth: true,
+	      numberOfMonths: 1,
+	      onClose: function( selectedDate ) {
+	        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+	      }
+	    });
+	    $( "#to" ).datepicker({
+	      defaultDate: "+1w",
+	      changeMonth: true,
+	      numberOfMonths: 1,
+	      onClose: function( selectedDate ) {
+	        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+	      }
+	    });
+	  });
+</script>
+<header>
+	<div class="options">
+		<span>猎头</span>
+		<span style="margin-right: 30px border-right: solid 1px gary;">user</span>
+		<img class="sign-out" src="../images/out.png">
+	</div>
+</header>
+<main ui-view>
+	<div class="search-box">
+		<form name="search">
+	    	<div class="search">
+	    		<div class="first-row">
+	    			<b>发布时间</b><input ng-model="vm.upDate" name="form" id="from" class="date-input" type="text"><span class="line">——</span>
+	    			<input ng-model="vm.endDate" name="to" id="to" class="date-input" type="text">
+	    			<span><b>类 型</b></span>
+	    			<select ng-model="vm.type"  class="type">
+	    				<option value="">全部</option>
+	    				<option value="0">首页banner</option>
+	    				<option value="1">找职位banner</option>
+	    				<option value="2">找精英banner</option>
+	    				<option value="3">行业大图</option>
+	    			</select>
+
+	    		</div>
+	    		<div class="second-row">
+	    			<span><b>状 态</b></span>
+	    			<select ng-model="vm.status" class="status">
+	    				<option value="">全部</option>
+	    				<option value="1">草稿</option>
+	    				<option value="2">上线</option>
+	    			</select>
+	    		</div>
+	    	</div>
+    	</form>
+    	<div class="buttons">
+    		<button ng-click="reloadRoute()">清空</button>
+    		<button ng-click="search2()">搜索</button>
+    	</div>
+    </div>
+    <div class="main-list">
+	<div class="list-head">
+		<b>Article列表</b>
+		<button ui-sref="article.adding" ng-click="clearadd()" class="add">新增</button>
+	</div>
+    <table class="table table-striped">
+    	<thead>
+    		<tr>
+    			<th>ID</th>
+    			<th>名称</th>
+    			<th>类型</th>
+    			<th>发布时间</th>
+    			<th>修改时间</th>
+    			<th>发布者</th>
+    			<th>状态</th>
+    			<th>操作</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat="X in dataset">
+    			<td>{{X.id}}</td>
+    			<td>{{X.title}}</td>
+    			<td>{{X.type | type}}</td>
+    			<td>{{X.createAt | date:'y-MM-d H:m:s'}}</td>
+    			<td>{{X.updateAt | date:'y-MM-d H:m:s'}}</td>
+    			<td>{{X.author}}</td>
+    			<td>{{X.status | status}}</td>
+    			<td>
+    				<button ng-click="upDown(X.id,X.status,this)">{{X.status | status2}}</button>
+    				<button ng-click="edit(X.id)">编辑</button>
+    				<button  ng-click="delete(X.id)">删除</button>
+    			</td>
+			</tr>
+    	</tbody>
+    </table>
+    </div>
+    <!-- 分页 -->
+    <nav class="pages" aria-label="Page navigation">
+      <ul class="pagination">
+<!--         <li>
+        	每页显示数量<input type="text">
+        </li>
+      	<li>首页</li> -->
+        <li ng-class="{true:'disabled',false:''}[isDisabled1]" ng-click="lastPage()">
+          <a  aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li ng-repeat="x in vm.array" class="pageLi" id="1" ng-click="pages(x)"><a id="{{x}}">{{x}}</a></li>
+        <li ng-class="{true:'disabled',false:''}[isDisabled]" ng-click="nextPage()" aria-label="Next"
+        >
+            <span ng-disabled="isDisabled" aria-hidden="true">&raquo;</span>
+        </li>
+<!--         <li>
+        	跳到<input type="text">页
+        </li>
+        <li>
+        	尾页
+        </li>
+        <p>共计{{vm.tatol}}条</p> -->
+      </ul>
+    </nav>
+</main>

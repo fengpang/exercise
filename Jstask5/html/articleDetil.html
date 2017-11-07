@@ -1,0 +1,71 @@
+<div class="col-md-12">
+	<div class="row margin-top-20px">
+	<form role="form" name="form1" id="form1">
+		<div class="row margin-top-20px form-group">
+			<label class="col-md-2" for="name"><span>标题链接</span></label>
+			<input  ng-model="add.addTitle" class="col-md-10" ng-minlength="4" ng-maxlength="32" name="title" type="text" class="form-control" id="name" placeholder="请输入标题" required>
+		</div>
+		<div style="color: red;text-align: center;font-size: 16px" ng-show="form1.title.$error.minlength || form1.title.$error.maxlength">请输入4到32位字符的标题</div>
+		<div class="row margin-top-20px form-group">
+			<label class="col-md-2" for="name"><span>类 型</span></label>
+			<select ng-model="add.addType" class="col-md-3" id="name1" name="type" required>
+				<option value="">请选择</option>
+				<option value="0">首页banner</option>
+				<option value="1">找职位banner</option>
+				<option value="2">找精英banner</option>
+				<option value="3">行业大图</option>
+			</select>
+			<select style="margin-left: 40px;" ng-if="add.addType==3" ng-model="add.addType2" class="col-md-3" id="name2" name="type2" required>
+				<option value="">请选择</option>
+				<option value="0">移动互联网</option>
+				<option value="1">电子商务</option>
+				<option value="2">企业服务</option>
+				<option value="3">020</option>
+				<option value="4">教育</option>
+				<option value="5">金融</option>
+				<option value="6">游戏</option>
+			</select>
+		</div>
+		<div class="row margin-top-20px form-group">
+			<label class="col-md-2"><span>说 明</span></label>
+			<div style="padding-left: 0;" class="col-md-10" id="editor"></div>
+		</div>
+		<div class="row margin-top-20px form-group">
+			<label class="col-md-2"><span>跳转链接</span></label>
+			<input name="url" class="col-md-10 form-control" type="url" id="name" ng-model="add.url" placeholder="请输入URL链接" required>
+		</div>
+		<div style="color: red;text-align: center;font-size: 16px"  ng-show="form1.url.$error.url&&form1.url.$touched">
+			请输入"http://"或者"https://"开头的完整url链接
+		</div>
+		<div class="row margin-top-20px form-group">
+			<label class="col-md-2" ><span>配 图</span></label>
+			<label for="inputfile" class="col-md-3 label-input-files">选择文件</label>
+			<input onchange="readfile(this)" required name="pictrues" class="col-md-8 btn-chose-img form-control file-input" accept="image/*" type="file" id="inputfile">
+		</div>
+		<!-- 文件信息 -->
+		<div class="row">
+			<p style="margin-left: 15.66666667%;" class="col-md-2">文件名</p>
+			<p class="col-md-2">大小</p>
+			<p class="col-md-2">进度</p>
+			<p class="col-md-2">操作</p>
+		</div>
+		<div class="row">
+			<p style="margin-left: 15.66666667%; word-wrap: break-word;" class="col-md-2" id="name123"></p>
+			<p class="col-md-2" id="size"></p>
+            <progress style="display: none;" id="progress" value="0" max="100"></progress>
+			<div class="buttons col-md-2">
+				<button ng-disabled="add.uploaBtn" ng-class="{'disabled':add.uploaBtn}" id="my-btn-upload" ng-model="add.texts" style="display: none" type="button" ng-click="demo()">上传</button>
+				<button id="my-btn-delete" style="display: none" type="button" ng-click="demo2()">删除</button>
+			</div>
+		</div>
+		<!-- 展示图片盒子 -->
+		<div class="row margin-top-20px" id="review-box" ng-show="add.imageSrc" >
+			<div class="col-md-2" style="height: 250px">
+			</div>
+			<img  class="col-md-6" style=" height: 100%;" id="review" ng-src = {{add.imageSrc}} >
+		</div>
+		<button ng-click="saveON(2)" ng-disabled="form1.$invalid || add.image "  type="button" class="btn btn-default btn-left">立即上线</button>
+		<button ng-click="saveON(1)" ng-disabled="form1.$invalid || add.image "  type="button" class="btn btn-default">存为草稿</button>
+	</form>
+	</div>
+</div>
